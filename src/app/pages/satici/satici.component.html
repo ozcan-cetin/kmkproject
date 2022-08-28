@@ -43,7 +43,7 @@
 
     <div class="col-6 col-md-8 col-lg-10">
       <div class="d-flex flex-wrap gap-3 gap-xlg-5 justify-content-between">
-        <div [ngStyle]="{ visibility: s1 == false ? 'hidden' : 'visible' }">
+        <div [ngStyle]="{ display: s1 == false ? 'none' : 'block' }">
           <li class="title">İLETİLER</li>
           <ul *ngFor="let item of total[0].iletiler" class="px-0 mt-3">
             <li>
@@ -52,7 +52,7 @@
           </ul>
         </div>
 
-        <div [ngStyle]="{ visibility: s2 == false ? 'hidden' : 'visible' }">
+        <div [ngStyle]="{ display: s2 == false ? 'none' : 'block' }">
           <li class="title">SİPARİŞLER</li>
           <ul *ngFor="let item of total[1].siparisler" class="px-0 mt-3">
             <li>
@@ -61,7 +61,7 @@
           </ul>
         </div>
 
-        <div [ngStyle]="{ visibility: s3 == false ? 'hidden' : 'visible' }">
+        <div [ngStyle]="{ display: s3 == false ? 'none' : 'block' }">
           <li class="title">KATALOG</li>
           <ul *ngFor="let item of total[2].katalog" class="px-0 mt-3">
             <li>
@@ -70,7 +70,7 @@
           </ul>
         </div>
 
-        <div [ngStyle]="{ visibility: s4 == false ? 'hidden' : 'visible' }">
+        <div [ngStyle]="{ display: s4 == false ? 'none' : 'block' }">
           <li class="title">MÜŞTERİLER</li>
           <ul *ngFor="let item of total[3].musteriler" class="px-0 mt-3">
             <li>
@@ -78,7 +78,7 @@
             </li>
           </ul>
         </div>
-        <div [ngStyle]="{ visibility: s5 == false ? 'hidden' : 'visible' }">
+        <div [ngStyle]="{ display: s5 == false ? 'none' : 'block' }">
           <li class="title">PAZARLAMA</li>
           <ul *ngFor="let item of total[4].pazarlama" class="px-0 mt-3">
             <li>
@@ -86,7 +86,7 @@
             </li>
           </ul>
         </div>
-        <div [ngStyle]="{ visibility: s6 == false ? 'hidden' : 'visible' }">
+        <div [ngStyle]="{ display: s6 == false ? 'none' : 'block' }">
           <li class="title">AYARLAR</li>
           <ul *ngFor="let item of total[5].ayarlar" class="px-0 mt-3">
             <li>

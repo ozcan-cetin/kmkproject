@@ -43,7 +43,7 @@
     <div class="col-6 col-md-8 col-lg-10">
       <div class="d-flex flex-wrap justify-content-between">
         <div
-          [ngStyle]="{ visibility: s1 == false ? 'hidden' : 'visible' }"
+          [ngStyle]="{ display: s1 == false ? 'none' : 'block' }"
           class="me-4"
         >
           <li class="title">İLETİLER</li>
@@ -55,7 +55,7 @@
         </div>
 
         <div
-          [ngStyle]="{ visibility: s2 == false ? 'hidden' : 'visible' }"
+          [ngStyle]="{ display: s2 == false ? 'none' : 'block' }"
           class="me-4"
         >
           <li class="title">SİPARİŞLER</li>
@@ -66,7 +66,7 @@
           </ul>
         </div>
         <div
-          [ngStyle]="{ visibility: s3 == false ? 'hidden' : 'visible' }"
+          [ngStyle]="{ display: s3 == false ? 'none' : 'block' }"
           class="me-4"
         >
           <li class="title">TAKİP</li>
@@ -77,7 +77,7 @@
           </ul>
         </div>
         <div
-          [ngStyle]="{ visibility: s4 == false ? 'hidden' : 'visible' }"
+          [ngStyle]="{ display: s4 == false ? 'none' : 'block' }"
           class="me-4"
         >
           <li class="title">LİSTEM</li>
@@ -88,7 +88,7 @@
           </ul>
         </div>
         <div
-          [ngStyle]="{ visibility: s5 == false ? 'hidden' : 'visible' }"
+          [ngStyle]="{ display: s5 == false ? 'none' : 'block' }"
           class="me-4"
         >
           <li class="title">KAMPANYALAR</li>
@@ -98,7 +98,7 @@
             </li>
           </ul>
         </div>
-        <div [ngStyle]="{ visibility: s6 == false ? 'hidden' : 'visible' }">
+        <div [ngStyle]="{ display: s6 == false ? 'none' : 'block' }">
           <li class="title">HESAP AYARLARI</li>
           <ul *ngFor="let item of total[5].hesap" class="px-0 mt-3">
             <li>
