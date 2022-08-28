@@ -1,0 +1,19 @@
+<header class="container-fluid py-2">
+    <div class="d-flex justify-content-between container flex-wrap">
+      <div class="d-flex gap-3 align-items-center">
+        <h3 class="brand m-0"><a routerLink="/home">C2C<span>GO</span></a></h3>
+        <div class="d-flex align-items-center gap-1 form-control">
+          <fa-icon [icon]=faSearch class="search"> </fa-icon>
+            <input type="search" class="" placeholder="ara..."/>
+          </div>
+      </div>
+      <div class="username d-flex gap-4">
+          <fa-icon [icon]=faQuestionCircle> </fa-icon>
+          <fa-icon [icon]=faClock> </fa-icon>
+          <fa-icon [icon]=faCalculator> </fa-icon>
+          <fa-icon [icon]=faBell> </fa-icon>
+          <i class="material-icons">apps</i>
+        <p class="m-0">{{username}}</p>
+      </div>
+    </div>
+   </header>

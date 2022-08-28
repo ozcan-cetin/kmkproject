@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LocalService } from './services/local.service';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,27 +9,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kmkproject';
+  faStar=faStar;
 
-  key: string ="";
-  public myItem: any;
-  storeName(name:string) {
-    localStorage.setItem(this.key, name);
-    this.myItem=localStorage.getItem(this.key)
-    this.key='';
+  items = ['item1', 'item2', 'item3', 'item4'];
+
+  addItem(newItem: string) {
+    // this.items.push(newItem);
+    this.username=newItem
   }
 
-  // getStore(){
-  // }
+constructor(private localStore: LocalService) { }
 
-  count:number=0
-
-  increase(){
-    this.count+=1
+  key:string="";
+  username:string=""
+  password:any;
+  
+  public setStorage(username:string){
+    this.key='user'
+    this.localStore.saveData(this.key, username);
   }
-  deccrease(){
-    if(this.count>0){
 
-      this.count-=1
-    }
-  }
+
 }

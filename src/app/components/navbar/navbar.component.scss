@@ -1,0 +1,51 @@
+.navbar{
+   background-color: #161A29;
+   color: rgba(255,255,255);
+   
+    li{
+        color: rgba(255,255,255,0.3);
+        list-style: none;
+        
+        a{text-decoration: none;}
+        div{
+            background-color: #fff;
+            box-shadow: 0px 5px 5px 1px gray;
+            a{
+                color: #333;
+                &:hover{
+                    font-weight: 500;
+                    // color: red;
+                }
+            }
+        }
+    }
+    .genel{
+        color: #0000ff80;
+        cursor: pointer;
+        &:hover{
+            color: #0000ff;
+        }
+       
+    }
+    .iletiler, .satış, .kullanıcılar, .katalog, .pazarlama, .ayarlar{
+        span{pointer-events: all;
+            cursor: pointer;}
+            &:hover{ color: rgba(255,255,255);}
+        pointer-events: none;
+        div{
+            visibility: hidden;
+            position: absolute;
+        }
+        &:hover div{
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+    .hızlıMenu{
+        color: rgba(255,255,255,0.3);
+        &:hover{
+            color: rgba(255,255,255);
+        }
+    }
+
+       }

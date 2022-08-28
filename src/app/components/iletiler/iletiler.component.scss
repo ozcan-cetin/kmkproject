@@ -1,0 +1,48 @@
+.satici{
+    a{
+        color: #333;
+        text-decoration: none;
+        &:hover{
+            font-weight: 500;
+            // color: red;
+        }
+    }
+    li{
+        // color: rgba(255,255,255,0.3);
+        list-style: none;
+    }
+
+   .genel, .home{
+    color: #0000ff80;
+    cursor: pointer;
+    &:hover, .genel .home{
+        color: #0000ff;
+    }
+   
+}
+.iletiler, .satış, .kullanıcılar, .katalog, .pazarlama, .ayarlar{
+    span{pointer-events: all;
+        cursor: pointer;}
+        &:hover{ font-weight: 400;}
+    pointer-events: none;
+    div{
+        visibility: hidden;
+        position: absolute;
+    }
+    &:hover div{
+        visibility: visible;
+        pointer-events: all;
+    }
+} 
+}
+
+.false{
+    display: none;
+}
+.true{
+    display: block;
+}
+
+.liste div:not(.iletiler1){
+    display: none;
+}

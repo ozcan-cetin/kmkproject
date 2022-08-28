@@ -1,0 +1,101 @@
+<app-header></app-header>
+<div class="container satici">
+  <div class="row">
+    <div class="sidebar container col-6 col-md-4 col-lg-2">
+      <p class="fw-bold h6">SATICI PANELİ</p>
+      <ul
+        class="container d-flex flex-column justify-content-between px-0 gap-3"
+      >
+        <li class="genel" (click)="opengenel()">
+          <fa-icon [icon]="faHome" class="home"> </fa-icon> Genel Bakış
+        </li>
+        <li class="iletiler" (click)="openIletiler()">
+          <span><fa-icon [icon]="faMessage"> </fa-icon> İletiler</span>
+        </li>
+        <li class="satış test1" (click)="opensiparis()">
+          <span><fa-icon [icon]="faShoppingCart"> </fa-icon> Siparişler</span>
+        </li>
+        <li class="katalog test1" (click)="openkatalog()">
+          <span><fa-icon [icon]="faReceipt"> </fa-icon> Katalog</span>
+        </li>
+        <li class="kullanıcılar" (click)="openmusteri()">
+          <span><fa-icon [icon]="faUsers"> </fa-icon> Müşteriler</span>
+        </li>
+        <li class="pazarlama" (click)="openpazarlama()">
+          <span><fa-icon [icon]="faChartLine"> </fa-icon> Pazarlama</span>
+        </li>
+        <li class="ayarlar" (click)="openayarlar()">
+          <span><fa-icon [icon]="faWrench"> </fa-icon> Ayarlar</span>
+        </li>
+        <li>
+          <a routerLink="/home" class="hızlıMenu"
+            ><fa-icon [icon]="faPlus"> </fa-icon> Hızlı Menü</a
+          >
+        </li>
+
+        <a routerLink="/alici"
+          ><button class="btn btn-outline-info rounded-5">
+            Alıcı Paneline Geç
+          </button></a
+        >
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-8 col-lg-10">
+      <div class="d-flex flex-wrap gap-5 justify-content-between">
+        <div [ngStyle]="{ visibility: s1 == false ? 'hidden' : 'visible' }">
+          <li class="title">İLETİLER</li>
+          <ul *ngFor="let item of total[0].iletiler" class="px-0 mt-3">
+            <li>
+              <a routerLink="">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <div [ngStyle]="{ visibility: s2 == false ? 'hidden' : 'visible' }">
+          <li class="title">SİPARİŞLER</li>
+          <ul *ngFor="let item of total[1].siparisler" class="px-0 mt-3">
+            <li>
+              <a routerLink="">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <div [ngStyle]="{ visibility: s3 == false ? 'hidden' : 'visible' }">
+          <li class="title">KATALOG</li>
+          <ul *ngFor="let item of total[2].katalog" class="px-0 mt-3">
+            <li>
+              <a routerLink="">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <div [ngStyle]="{ visibility: s4 == false ? 'hidden' : 'visible' }">
+          <li class="title">MÜŞTERİLER</li>
+          <ul *ngFor="let item of total[3].musteriler" class="px-0 mt-3">
+            <li>
+              <a routerLink="">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
+        <div [ngStyle]="{ visibility: s5 == false ? 'hidden' : 'visible' }">
+          <li class="title">PAZARLAMA</li>
+          <ul *ngFor="let item of total[4].pazarlama" class="px-0 mt-3">
+            <li>
+              <a routerLink="">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
+        <div [ngStyle]="{ visibility: s6 == false ? 'hidden' : 'visible' }">
+          <li class="title">AYARLAR</li>
+          <ul *ngFor="let item of total[5].ayarlar" class="px-0 mt-3">
+            <li>
+              <a routerLink="">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <iletiler [ngStyle]="{'display': s1==true ? 'none' :'block' }"></iletiler> -->

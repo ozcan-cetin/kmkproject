@@ -4,11 +4,11 @@
     <p>Hoşgeldiniz! Hesabınıza giriş yapın.</p>
     <div class="mb-3">
       <label for="name" class="mb-2">Kullanıcı adı</label>
-      <input type="text" class="form-control" name="name" id="name" required [(ngModel)]="username" [ngStyle]="{'border-color': !username && 'red'}"/>
+      <input type="text" class="form-control" name="name" id="name" required [(ngModel)]="username" [ngStyle]="{'border-color': !redUser ? null : 'red'}" />
     </div>
     <div class="mb-3">
       <label for="password" class="mb-2">Parola</label>
-      <input type="text" maxlength="16" minlength="8" class="form-control" name="password" id="password" [(ngModel)]="password" required placeholder="********"/>
+      <input type="text" maxlength="16" minlength="8" class="form-control" name="password" id="password" [(ngModel)]="password" required placeholder="********" [ngStyle]="{'border-color': !redPassword ? null : 'red'}"/>
     </div>
     <div class="mb-3 d-flex gap-2">
         <input type="checkbox" id="check">
@@ -22,3 +22,4 @@
    <!-- {{myItem}} -->
   </form>
 </div>
+<!-- <router-outlet></router-outlet>  -->

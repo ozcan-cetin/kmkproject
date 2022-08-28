@@ -1,0 +1,33 @@
+header{
+    background-color: #161A29;
+    color: rgba(255,255,255);
+    .form-control{
+        background-color: transparent;
+        border: none;
+        &:focus-within{
+            border:1px solid blueviolet ;
+        }
+    }
+    input, .search{
+        color: rgba(255,255,255,0.3);
+        background-color: transparent;
+        border-style: none !important;
+        outline: none !important;
+     }
+     .username{
+         color: rgba(255,255,255,0.3);
+         
+         p:hover, fa-icon:hover, i:hover{
+             color: rgba(255,255,255);
+             cursor: pointer;
+         }
+     }
+     a{
+        text-decoration: none;
+        color: rgba(255,255,255);
+     }
+     span{
+        color: rgb(66, 66, 235);
+        font-weight: 100;
+     }
+}
