@@ -27,7 +27,7 @@
         }
        
     }
-    .iletiler, .satış, .kullanıcılar, .katalog, .pazarlama, .ayarlar{
+    .iletiler, .satış, .users, .katalog, .pazarlama, .ayarlar{
         span{pointer-events: all;
             cursor: pointer;}
             &:hover{ color: rgba(255,255,255);}
