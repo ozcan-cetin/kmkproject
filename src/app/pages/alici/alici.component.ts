@@ -29,7 +29,7 @@ export class AliciComponent implements OnInit {
 
   total=[
     {iletiler:["Gelenler", 'Gidenler', "Sohbet", "Çöp Kutusu"]},
-    {siparisler:["Terkrarlayan siparişler", 'İptal siparişlerim', "İade işlemlerim", "Cari işlemlerim",'Değerlendirmelerim']},
+    {siparisler:["Tekrarlayan siparişler", 'İptal siparişlerim', "İade işlemlerim", "Cari işlemlerim",'Değerlendirmelerim']},
     {takip:["Takip ettiğim ürünler", 'T.E. Kategoriler', "T.E. Markalar", "T.E. Satıcılar"]},
     {listem:["Alışveriş listem"]},
     {kampanyalar:["Bana özel kampanyalar", 'Kuponlarım']},
