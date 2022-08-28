@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { LocalService } from 'src/app/services/local.service';
+// import { LocalService } from 'src/app/services/local.service';
 
 @Component({
   selector: 'home',
@@ -9,8 +9,8 @@ import { LocalService } from 'src/app/services/local.service';
 export class HomeComponent implements OnInit {
 @Input() username:any;
 
-  key:string="";
-  constructor(private localStore: LocalService) { }
+  // key:string="";
+  // constructor(private localStore: LocalService) { }
 
   ngOnInit():void{
   }
