@@ -1,14 +1,15 @@
-<div class="mx-auto container col-10 col-md-6">
-  <form>
+<div class="row d-flex justify-content-center">
+  <!-- <div> -->
+<form class="col-10 col-md-5 col-lg-4">
     <h1>C2C<span>GO</span></h1>
     <p>Hoşgeldiniz! Hesabınıza giriş yapın.</p>
     <div class="mb-3">
       <label for="name" class="mb-2">Kullanıcı adı</label>
-      <input type="text" class="form-control" name="name" id="name" required [(ngModel)]="username" [ngStyle]="{'border-color': !redUser ? null : 'red'}" />
+      <input type="text" class="form-control input" name="name" id="name" required [(ngModel)]="username" [ngStyle]="{'border-color': !redUser ? null : 'red'}" />
     </div>
     <div class="mb-3">
       <label for="password" class="mb-2">Parola</label>
-      <input type="text" maxlength="16" minlength="8" class="form-control" name="password" id="password" [(ngModel)]="password" required placeholder="********" [ngStyle]="{'border-color': !redPassword ? null : 'red'}"/>
+      <input type="text" maxlength="16" minlength="8" class="form-control input" name="password" id="password" [(ngModel)]="password" required placeholder="********" [ngStyle]="{'border-color': !redPassword ? null : 'red'}"/>
     </div>
     <div class="mb-3 d-flex gap-2">
         <input type="checkbox" id="check">
@@ -19,7 +20,7 @@
     <a href="">Şifreni mi unuttun?</a>
     <p class="mt-2">Kullanıcı değil misiniz? <a href="">Paketleri İncele</a></p>
    </div>
-   <!-- {{myItem}} -->
   </form>
+  <!-- </div> -->
+  
 </div>
-<!-- <router-outlet></router-outlet>  -->
