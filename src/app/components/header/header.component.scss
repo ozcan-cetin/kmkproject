@@ -46,10 +46,11 @@ header{
     }
 }
 
-// .bottomIcon{
-//     font-size:1.5rem;
-// }
-// .bottomIcon fa-icon:hover, i:hover{
-//     color: rgba(255,255,255);
-//     cursor: pointer;
-// }
+.bottomIcon{
+    color: rgba(255,255,255,0.3);
+    font-size:1.5rem;
+}
+.bottomIcon fa-icon:hover, i:hover{
+    color: rgba(255,255,255);
+    cursor: pointer;
+}

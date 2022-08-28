@@ -1,0 +1,9 @@
+.homeImg{
+    width: 100vw;
+    height:calc(100vh - 120px);
+}
+.homeImg img{
+width: 100%;
+height: 100%;
+object-fit: container;
+}
