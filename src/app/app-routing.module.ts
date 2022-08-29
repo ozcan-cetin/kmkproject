@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { GelenlerComponent } from './components/gelenler/gelenler.component';
 import { HizlisiparisComponent } from './components/hizlisiparis/hizlisiparis.component';
 import { MusterilerComponent } from './components/musteriler/musteriler.component';
+import { PerformansComponent } from './components/performans/performans.component';
+import { SistemayarlariComponent } from './components/sistemayarlari/sistemayarlari.component';
 import { UrunhavuzuComponent } from './components/urunhavuzu/urunhavuzu.component';
 import { AliciComponent } from './pages/alici/alici.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path:"hizlisiparis",component:HizlisiparisComponent},
   {path:"musteriler",component:MusterilerComponent},
   {path:"urunhavuzu",component:UrunhavuzuComponent},
+  {path:"sistemayarlari",component:SistemayarlariComponent},
+  {path:"performans",component:PerformansComponent},
 ];
 
 @NgModule({
