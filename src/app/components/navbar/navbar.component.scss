@@ -1,6 +1,7 @@
 .navbar{
    background-color: #161A29;
    color: rgba(255,255,255);
+   padding-bottom: 0;
 //   height: 3rem;
     li{
         color: rgba(255,255,255,0.3);
@@ -33,11 +34,13 @@
             &:hover{ color: rgba(255,255,255);}
         pointer-events: none;
         div{
-            visibility: hidden;
+            // visibility: hidden;
+            display: none;
             position: absolute;
         }
         &:hover div{
-            visibility: visible;
+            // visibility: visible;
+            display: block;
             pointer-events: all;
         }
     }
