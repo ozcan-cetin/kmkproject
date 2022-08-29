@@ -12,6 +12,12 @@ import { SaticiComponent } from './pages/satici/satici.component';
 import { AliciComponent } from './pages/alici/alici.component';
 import { PaylaskazanComponent } from './pages/paylaskazan/paylaskazan.component';
 import { HeaderComponent } from './components/header/header.component';
+import { GelenlerComponent } from './components/gelenler/gelenler.component';
+import { HizlisiparisComponent } from './components/hizlisiparis/hizlisiparis.component';
+import { MusterilerComponent } from './components/musteriler/musteriler.component';
+import { UrunhavuzuComponent } from './components/urunhavuzu/urunhavuzu.component';
+import { PerformansComponent } from './components/performans/performans.component';
+import { SistemayarlariComponent } from './components/sistemayarlari/sistemayarlari.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,12 @@ import { HeaderComponent } from './components/header/header.component';
     AliciComponent,
     PaylaskazanComponent,
     HeaderComponent,
+    GelenlerComponent,
+    HizlisiparisComponent,
+    MusterilerComponent,
+    UrunhavuzuComponent,
+    PerformansComponent,
+    SistemayarlariComponent,
   ],
   imports: [
     BrowserModule,
