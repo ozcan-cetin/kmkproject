@@ -29,7 +29,7 @@
        
     }
     .iletiler, .satış, .users, .katalog, .pazarlama, .ayarlar{
-        span{pointer-events: all;
+        span, fa-icon{pointer-events: all;
             cursor: pointer;}
             &:hover{ color: rgba(255,255,255);}
         pointer-events: none;
