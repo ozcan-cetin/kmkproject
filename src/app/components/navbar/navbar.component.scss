@@ -14,7 +14,8 @@
             a{
                 color: #333;
                 &:hover{
-                    font-weight: 500;
+                    text-decoration: underline;
+                    // font-weight: 500;
                     // color: red;
                 }
             }
